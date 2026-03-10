@@ -1,0 +1,6 @@
+import uvicorn
+from fastapi import FastAPI
+app=FastAPI()
+@app.get("/")
+def get_data():
+    return "Hello World!"
